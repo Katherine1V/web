@@ -1,0 +1,67 @@
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+section {
+    padding: 20px;
+}
+/* Estilos para los productos */
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+}
+.producto:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+/* Pseudoclase para productos nuevos */
+.producto::after {
+    content: "Nuevo";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    display: none;
+}
+.producto:hover::after {
+    display: block;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+img{
+    width: 150px;
+    height: 200px;
+}
+#idimg{
+    width: 100px;
+    height: 95px;
+    display: flex;
+    margin: 35px;
+}
